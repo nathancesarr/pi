@@ -1,0 +1,141 @@
+/* lateral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header:hover {
+    background-color: #45a049;  
+}
+
+header .header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header .header-content p {
+    font-size: 18px;
+}
+
+
+main {
+    padding: 40px 20px;
+}
+
+
+.setor {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+.setor h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.plant-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plant-card img {
+    width: 220px;
+    height: 240px;
+    border-radius: 8px;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    color: #4CAF50;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+ @media(max-width:  768px) {
+    .plant-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+    .plant-card img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .setor h2 {
+        font-size: 24px;
+        
+    }
+    .setor h1{
+        color: #4CAF50;
+        text-align: center;
+    }
+
+    header .header-content h1 {
+        font-size: 32px;
+    }
+
+.p{
+    align-items: center;
+}
+
+.img-voltar {
+    width: 30px; /* Tamanho da imagem */
+    height: 30px; /* Tamanho da imagem */
+    position: fixed; /* Fixa a imagem na tela */
+    top: 10px; /* Distância do topo da página */
+    left: 10px; /* Distância da esquerda da página */
+    z-index: 1000; /* Garante que a imagem fique acima de outros elementos */
+    transition: opacity 0.3s ease; /* Transição suave */
+    display: block;  /* Evita margens indesejadas */
+    max-width: 100%;  /* Ajusta o tamanho da imagem para o tamanho do contêiner */
+}
+
+
+
+.imagem-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    margin: 20px 0;          /* Adiciona um espaçamento em cima e embaixo */
+}
+
+/* Estilo para a imagem */
+img {
+    max-width: 100%;   /* Faz com que a imagem não ultrapasse a largura da tela */
+    height: auto;      /* Ajusta a altura da imagem proporcionalmente */
+}
